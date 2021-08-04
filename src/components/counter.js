@@ -25,16 +25,6 @@ const mapStateToProps = (state) => {
     counter: state,
   };
 };
-/*
-const mapDispatchToProps = (dispatch) => {
-  return bindActionCreators(actions, dispatch);
-  /!* const { decAC, incAC, randAC } = bindActionCreators(actions, dispatch);
 
-  return {
-    decAC,
-    incAC,
-    randAC,
-  };*!/
-};*/
 export default connect(mapStateToProps, actions)(Counter);
-// export default connect(mapStateToProps, mapDispatchToProps)(Counter);
+
